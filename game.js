@@ -11,8 +11,9 @@ gameInput.keydown(function(keydownEvent) {
 
 function parseText(text) {  
   if (text === "hello") {
-    gameOutput.html("Hi there!");
-  else if (text.indexOf
+    gameOutput.html("Hi there!");}
+  else if (text.indexOf("help") > -1) {
+    gameOutput.html("jdkls;alk")
   } 
   else if (text.indexOf("cat") > -1) {
     gameOutput.html("<img src='http://25.media.tumblr.com/tumblr_m4jkvpAPds1rv3b62o1_500.gif'>");
