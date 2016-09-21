@@ -26,9 +26,9 @@ function parseText(text) {
   }
   else if (text.indexOf("text/") > -1) {
     var split = text.split("text/ ")
-    getWikiIntro(split[0, 20], function(text) {      
+    getWikiIntro(split.slice(0, 20)), function(text) {      
       return text
-    })
+    }
   } 
   else  {
     var responses = [
