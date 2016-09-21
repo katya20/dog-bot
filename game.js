@@ -13,13 +13,9 @@ function parseText(text) {
   if (text === "hello") {
     gameOutput.html("Hi there!");
   }
-  else if (text.indexOf("/gif") > -1) {
-    var split = text.split("/gif ")
-    getWikiIntro(split[1], function(text) {      
-      return text
-    })
+  else if (text.indexOf("help") > -1) {
+    gameOutput.html("type " /text " and anything you want me to search on Google")
   } 
-
   else if (text.indexOf("cat") > -1) {
     gameOutput.html("<img src='http://25.media.tumblr.com/tumblr_m4jkvpAPds1rv3b62o1_500.gif'>");
   }
@@ -28,6 +24,12 @@ function parseText(text) {
   } else if (text.indexOf("name") > -1){
     gameOutput.html("Dog")
   }
+  else if (text.indexOf("text/") > -1) {
+    var split = text.split("text/ ")
+    getWikiIntro(split[0, 20], function(text) {      
+      return text
+    })
+  } 
   else  {
     var responses = [
       "IDK",
