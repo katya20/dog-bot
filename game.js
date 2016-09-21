@@ -44,7 +44,7 @@ function parseText(text) {
 function getWikiIntro(title, processor) {
   $.ajax({
     method: "GET",
-    url: "http://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exlimit=max&explaintext&exintro&titles=" + title,    
+    url: "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exlimit=max&explaintext&exintro&titles=" + title,    
     dataType: "jsonp",
     jsonp: "callback",
     success: function(res) {
