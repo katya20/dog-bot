@@ -11,9 +11,10 @@ gameInput.keydown(function(keydownEvent) {
 
 function parseText(text) {  
   if (text === "hello") {
-    gameOutput.html("Hi there!");}
+    gameOutput.html("Hi there!");
+  }
   else if (text.indexOf("help") > -1) {
-    gameOutput.html("jdkls;alk")
+    gameOutput.html("type " /text " and anything you want me to search on Google")
   } 
   else if (text.indexOf("cat") > -1) {
     gameOutput.html("<img src='http://25.media.tumblr.com/tumblr_m4jkvpAPds1rv3b62o1_500.gif'>");
