@@ -21,9 +21,9 @@ function parseText(text) {
   } else if (text.indexOf("name") > -1){
     gameOutput.html("Dog")
   }
-  else if (text.indexOf("/gif") > -1) {
-    var split = text.split("/gif ")
-    getWikiIntro(split[1], function(text) {      
+  else if (text.indexOf("text") > -1) {
+    var split = text.split("text ")
+    getWikiIntro(split(0, 50), function(text) {      
       return text
     })
   } 
