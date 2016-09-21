@@ -12,6 +12,7 @@ gameInput.keydown(function(keydownEvent) {
 function parseText(text) {  
   if (text === "hello") {
     gameOutput.html("Hi there!");
+  else if (text.indexOf
   } 
   else if (text.indexOf("cat") > -1) {
     gameOutput.html("<img src='http://25.media.tumblr.com/tumblr_m4jkvpAPds1rv3b62o1_500.gif'>");
@@ -21,14 +22,12 @@ function parseText(text) {
   } else if (text.indexOf("name") > -1){
     gameOutput.html("Dog")
   }
-  else if (text.indexOf("text") > -1) {
-    var split = text.split("text ")
-    getWikiIntro(split(0, 50), function(text) {      
+  else if (text.indexOf("text/") > -1) {
+    var split = text.split("text/ ")
+    getWikiIntro(split[0, 20], function(text) {      
       return text
     })
   } 
-
-
   else  {
     var responses = [
       "IDK",
