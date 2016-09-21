@@ -14,7 +14,7 @@ function parseText(text) {
     gameOutput.html("Hi there!");
   }
   else if (text.indexOf("help") > -1) {
-    gameOutput.html("type " /type " and anything you want me to search on Google")
+    gameOutput.html("type /type and anything you want me to search on Google")
   } 
   else if (text.indexOf("cat") > -1) {
     gameOutput.html("<img src='http://25.media.tumblr.com/tumblr_m4jkvpAPds1rv3b62o1_500.gif'>");
